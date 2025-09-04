@@ -1,0 +1,870 @@
+body {
+    background-color: #000000 !important;
+}
+/* Navbar background */
+.graffiti-navbar {
+    background-color: #000000; /* black background */
+    padding: 10px 20px;
+    font-family: 'Permanent Marker', cursive; /* graffiti-style font */
+    font-size: 1.5rem;
+}
+
+/* Brand text */
+.graffiti-navbar .navbar-brand {
+    color: #ff2f9c; /* bright pink */
+    font-size: 1.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Brand hover pop-out */
+.graffiti-navbar .navbar-brand:hover {
+    color: #a03eff;
+    transform: scale(1.1);
+}
+
+/* Nav links */
+.graffiti-navbar .nav-link {
+    color: #ff2f9c;
+    margin: 0 10px;
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+    text-shadow: 1px 1px #000, 2px 2px #4b0082;
+}
+
+/* Hover effect */
+.graffiti-navbar .nav-link:hover {
+    color: #3eb8ff;
+    transform: scale(1.1);
+    text-shadow: 2px 2px #000, 4px 4px #ff69b4;
+}
+
+/* Active and focus states */
+.graffiti-navbar .nav-link:focus,
+.graffiti-navbar .nav-link:active {
+    color: #a03eff !important;
+    background-color: transparent !important;
+    transform: scale(1.1);
+    outline: none;
+}
+
+/* Dropdown menu */
+.graffiti-navbar .dropdown-menu {
+    background-color: #111111;
+}
+
+.graffiti-navbar .dropdown-item {
+    color: #ff2f9c;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.graffiti-navbar .dropdown-item:hover {
+    color: #a03eff;
+    transform: scale(1.05);
+}
+
+/* Search input and button */
+.graffiti-navbar .form-control {
+    background-color: #222222;
+    color: #ffffff;
+    border: none;
+}
+
+.graffiti-navbar .form-control::placeholder {
+    color: #cccccc;
+}
+
+.graffiti-navbar .btn-outline-light {
+    color: #ff2f9c;
+    border-color: #000000;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.graffiti-navbar .btn-outline-light:hover {
+    background-color: #a03eff;
+    border-color: #000000;
+    color: #000000;
+    transform: scale(1.05);
+}
+
+/* Button styles */
+.btn {
+    background: linear-gradient(45deg, #ff2f9c, #3eb8ff);
+    color: #ffffff;
+    border: none;
+    padding: 12px 30px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 47, 156, 0.5);
+}
+
+/* Other styles continue... */
+  /* About Us Page Styles */
+  .about-section {
+    padding: 40px 0;
+    margin: 20px 0;
+  }
+
+  .mission-bg {
+    background: linear-gradient(45deg, #ff2f9c25, #3eb8ff25, #a03eff25);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 30px 0;
+  }
+
+.value-card {
+    background: #111111;
+    padding: 30px 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border: 2px solid #ff2f9c;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block; /* Ensure proper block-level display */
+    text-decoration: none; /* Remove underline from anchor tags */
+    color: inherit; /* Inherit text color from parent */
+}
+
+.value-card:hover {
+    transform: translateY(-10px); /* Increased lift on hover */
+    box-shadow: 0 15px 30px rgba(255, 47, 156, 0.5); /* Enhanced shadow */
+}
+
+  .value-title {
+    color: #3eb8ff;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px #000, 3px 3px #ff69b4;
+  }
+
+  .graffiti-subtitle {
+    font-family: 'Permanent Marker', cursive;
+    color: #ff2f9c;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #000, 3px 3px #3eb8ff;
+  }
+
+  .graffiti-text {
+    font-family: 'Permanent Marker', cursive;
+    color: #00eeff;
+    font-size: 3rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #000, 3px 3px #ef3eff;
+    text-shadow:
+      2px 2px 4px rgba(0, 0, 0, 0.7),
+      0 0 10px rgba(47, 255, 220, 0.8),
+      0 0 20px rgba(62, 184, 255, 0.7);
+    
+  }
+
+  /* Facilities Page Styles */
+  .facility-section {
+    margin: 0; /* Remove margin to eliminate white space */
+    height: 800px; /* Increased height for better visibility */
+    padding: 80px 0; /* Increased padding for more space */
+    border-bottom: 1px solid #333;
+    margin: 40px 0; /* Added margin for better spacing */
+    font-size: larger;
+  }
+
+  .fitness-bg {
+    background: linear-gradient(45deg, #3eb8ff15, #a03eff15);
+    padding: 40px;
+    border-radius: 15px;
+    margin: 30px 0;
+  }
+
+  .facility-features {
+    text-align: left;
+    color: #09c6ff;
+    list-style: none;
+    padding: 0;
+    font-size: 2rem;
+    text-shadow:
+      2px 2px 4px rgba(0, 0, 0, 0.7),
+      0 0 10px rgba(47, 255, 220, 0.8),
+      0 0 20px rgba(62, 184, 255, 0.7);
+  }
+
+  .facility-features li {
+    padding: 8px 0;
+    position: relative;
+    padding-left: 25px;
+  }
+
+  .facility-features li:before {
+    content: "⚡";
+    color: #ff2f9c;
+    position: absolute;
+    left: 0;
+    font-size: 1.5rem;
+  }
+
+  .amenities-section {
+    padding: 50px 0;
+    background: linear-gradient(135deg, #000000, #111111);
+    border-radius: 20px;
+    margin: 40px 0;
+  }
+
+  .amenity-card {
+    background: #222222;
+    padding: 25px 15px;
+    margin: 15px;
+    border-radius: 10px;
+    border: 1px solid #3eb8ff;
+    transition: all 0.3s ease;
+  }
+
+  .amenity-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(62, 184, 255, 0.4);
+  }
+
+  .amenity-card h4 {
+    color: #a03eff;
+    font-family: 'Permanent Marker', cursive;
+    margin-bottom: 10px;
+  }
+
+  .amenity-card p {
+    color: #cccccc;
+    font-size: 0.9rem;
+  }
+
+  .placeholder-image {
+    background: linear-gradient(45deg, #ff2f9c, #3eb8ff, #a03eff);
+    height: 250px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px #000;
+  }
+
+  /* Facility Image Styles (for non-carousel images) */
+  .facility-section > img {
+    width: 100%;
+    height: 1000px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid #ff2f9c;
+    transition: all 0.5s ease;
+    animation: float-image 4s ease-in-out infinite;
+    box-shadow: 0 10px 30px rgba(255, 47, 156, 0.4);
+  }
+
+  .facility-section > img:hover {
+    animation: float-image-hover 2s ease-in-out infinite, glow-pulse 1.5s ease-in-out infinite;
+    transform: scale(1.05);
+    border-color: #3eb8ff;
+    box-shadow: 0 15px 40px rgba(62, 184, 255, 0.6);
+  }
+
+  @keyframes float-image {
+    0%, 100% {
+      transform: translateY(0) rotate(0deg);
+    }
+    25% {
+      transform: translateY(-8px) rotate(1deg);
+    }
+    50% {
+      transform: translateY(0) rotate(0deg);
+    }
+    75% {
+      transform: translateY(8px) rotate(-1deg);
+    }
+  }
+
+  @keyframes float-image-hover {
+    0%, 100% {
+      transform: translateY(-5px) rotate(2deg) scale(1.05);
+    }
+    50% {
+      transform: translateY(5px) rotate(-2deg) scale(1.05);
+    }
+  }
+
+  @keyframes glow-pulse {
+    0%, 100% {
+      box-shadow: 0 15px 40px rgba(62, 184, 255, 0.6);
+    }
+    50% {
+      box-shadow: 0 20px 50px rgba(255, 47, 156, 0.8);
+    }
+  }
+
+  /* Carousel Styles */
+  .carousel {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(255, 47, 156, 0.4);
+  }
+
+  .carousel-inner {
+    border-radius: 15px;
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    animation: float-image 4s ease-in-out infinite;
+    box-shadow: 0 10px 30px rgba(255, 47, 156, 0.4);
+  }
+
+  .carousel-item img:hover {
+    transform: scale(1.05);
+    animation: float-image-hover 2s ease-in-out infinite, glow-pulse 1.5s ease-in-out infinite;
+    border-color: #3eb8ff;
+    box-shadow: 0 15px 40px rgba(62, 184, 255, 0.6);
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 47, 156, 0.7);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.8;
+    transition: all 0.3s ease;
+  }
+
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    background: rgba(160, 62, 255, 0.9);
+    opacity: 1;
+  }
+
+  .carousel-control-prev {
+    left: 15px;
+  }
+
+  .carousel-control-next {
+    right: 15px;
+  }
+
+  /* Modal Styles for Full Screen Images */
+.modal-content {
+  background-color: transparent !important;
+    backdrop-filter: blur(10px) !important; /* Apply blur effect to the modal background */
+    background-color: #00a2ff;
+    border-radius: 15px;
+  }
+
+  .modal-header {
+    border-bottom: 1px solid #333;
+    padding: 15px 20px;
+  }
+
+  .modal-title {
+    color: #3eb8ff;
+    font-family: 'Permanent Marker', cursive;
+    align-items: center;
+  }
+
+  .btn-close {
+    background: transparent;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+  }
+
+  .btn-close:hover {
+    opacity: 1;
+  }
+
+  .modal-body img {
+    width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+    
+  }
+
+  .modal-footer {
+    border-top: 1px solid #333;
+    padding: 15px 20px;
+  }
+
+  .modal-nav-btn {
+    background: linear-gradient(45deg, #ff2f9c, #3eb8ff);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    transition: all 0.3s ease;
+  }
+
+  .modal-nav-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 47, 156, 0.5);
+  }
+
+  /* Logo size adjustment */
+  .logodisplay img {
+    max-width: 200px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+
+  .logodisplay img:hover {
+    transform: scale(1.05) rotate(5deg);
+    box-shadow: 0 0 20px 5px rgba(255, 47, 156, 0.8), 0 0 30px 10px rgba(62, 184, 255, 0.7);
+  }
+
+  /* Enhanced 3D Welcome Text Effect */
+  .welcome-3d {
+    font-family: 'Rock Salt', cursive;
+    font-size: clamp(40px, 6vw, 80px);
+    color: rgb(234, 0, 255);
+    text-align: center;
+    text-shadow: 
+      3px 3px 0 #3eb8ff,
+      6px 6px 0 #ff2f9c,
+      9px 9px 0 #a03eff,
+      12px 12px 0 #000000;
+    transform: perspective(500px) rotateX(10deg);
+    animation: 
+      text-float 3s ease-in-out infinite alternate,
+      glow-move 4s ease-in-out infinite alternate;
+    margin: 40px 0;
+    padding: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .welcome-3d:hover {
+    transform: perspective(500px) rotateX(15deg) scale(1.05);
+    animation-play-state: paused;
+  }
+
+.welcome-3d::before {
+    content: '';
+    position: fixed; /* Change to fixed to cover the entire screen */
+    top: 0; /* Cover the top */
+    left: 0; /* Cover the left */
+    right: 0; /* Cover the right */
+    bottom: 0; /* Cover the bottom */
+    background: linear-gradient(45deg, 
+      rgba(255, 47, 156, 0.4), /* Increased opacity for more glow */
+      rgba(62, 184, 255, 0.4),
+      rgba(160, 62, 255, 0.4)
+    );
+    z-index: -1;
+    animation: background-pulse 3s ease-in-out infinite alternate;
+    filter: blur(20px); /* Increased blur for a more pronounced effect */
+}
+
+  @keyframes text-float {
+    0% {
+      transform: perspective(500px) rotateX(10deg) translateY(0px);
+    }
+    100% {
+      transform: perspective(500px) rotateX(12deg) translateY(-10px);
+    }
+  }
+
+  @keyframes glow-move {
+    0% {
+      text-shadow: 
+        3px 3px 0 #3eb8ff,
+        6px 6px 0 #ff2f9c,
+        9px 9px 0 #a03eff,
+        12px 12px 0 #000000,
+        0 0 20px rgba(255, 47, 156, 0.5),
+        0 0 40px rgba(62, 184, 255, 0.3);
+    }
+    25% {
+      text-shadow: 
+        3px 3px 0 #3eb8ff,
+        6px 6px 0 #ff2f9c,
+        9px 9px 0 #a03eff,
+        12px 12px 0 #000000,
+        10px 10px 30px rgba(255, 47, 156, 0.7),
+        20px 20px 50px rgba(62, 184, 255, 0.5);
+    }
+    50% {
+      text-shadow: 
+        3px 3px 0 #3eb8ff,
+        6px 6px 0 #ff2f9c,
+        9px 9px 0 #a03eff,
+        12px 12px 0 #000000,
+        0 0 25px rgba(160, 62, 255, 0.6),
+        0 0 45px rgba(255, 47, 156, 0.4);
+    }
+    75% {
+      text-shadow: 
+        3px 3px 0 #3eb8ff,
+        6px 6px 0 #ff2f9c,
+        9px 9px 0 #a03eff,
+        12px 12px 0 #000000,
+        -10px -10px 35px rgba(62, 184, 255, 0.8),
+        -20px -20px 55px rgba(160, 62, 255, 0.6);
+    }
+    100% {
+      text-shadow: 
+        3px 3px 0 #3eb8ff,
+        6px 6px 0 #ff2f9c,
+        9px 9px 0 #a03eff,
+        12px 12px 0 #000000,
+        0 0 30px rgba(255, 47, 156, 0.9),
+        0 0 60px rgba(62, 184, 255, 0.7);
+    }
+  }
+
+  @keyframes background-pulse {
+    0% {
+      opacity: 0.3;
+      transform: scale(0.95);
+    }
+    100% {
+      opacity: 0.6;
+      transform: scale(1.05);
+    }
+  }
+
+  /* Interactive cursor effects */
+  .welcome-3d:hover::before {
+    animation: background-pulse 1s ease-in-out infinite alternate;
+    filter: blur(20px) brightness(1.2);
+  }
+
+  /* Calculator Styles */
+  .calculator-section {
+    padding: 40px 0;
+  }
+
+  .calculator-card {
+    background: #111111;
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid #3eb8ff;
+    margin: 20px 0;
+  }
+
+  .calculator-input {
+    background: #222222;
+    border: 1px solid #ff2f9c;
+    color: #ffffff;
+    transition: all 0.3s ease;
+  }
+
+  .calculator-input:focus {
+    background: #333333;
+    border-color: #3eb8ff;
+    box-shadow: 0 0 10px rgba(62, 184, 255, 0.5);
+    color: #ffffff;
+  }
+
+  .calculator-btn {
+    background: linear-gradient(45deg, #ff2f9c, #3eb8ff);
+    border: none;
+    padding: 12px 30px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 0;
+  }
+
+  .calculator-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 47, 156, 0.5);
+    color: #ffffff;
+  }
+
+  .signup-btn {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    padding: 15px 40px;
+  }
+
+  .results-container {
+    background: linear-gradient(45deg, #ff2f9c15, #3eb8ff15, #a03eff15);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #3eb8ff;
+  }
+
+  .result-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 8px 0;
+    border-bottom: 1px solid #333;
+  }
+
+  .result-item.total {
+    border-top: 2px solid #ff2f9c;
+    border-bottom: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 15px;
+  }
+
+  .result-label {
+    color: #3eb8ff;
+    font-family: 'Permanent Marker', cursive;
+  }
+
+  .result-value {
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+/* Home Link Card */
+.home-link-card {
+    background: linear-gradient(45deg, #ff2f9c, #3eb8ff, #a03eff);
+    padding: 50px 30px;
+    margin: 40px 0;
+    border-radius: 15px;
+    border: 3px solid #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+}
+
+.home-link-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(255, 47, 156, 0.6);
+}
+
+.home-link-title {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px #000, 3px 3px #000;
+}
+
+.home-link-text {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .welcome-3d {
+    font-size: clamp(30px, 8vw, 50px);
+    text-shadow: 
+      2px 2px 0 #3eb8ff,
+      4px 4px 0 #ff2f9c,
+      6px 6px 0 #a03eff,
+      8px 8px 0 #000000;
+  }
+  
+  .value-card, .amenity-card {
+    margin: 10px 0;
+  }
+
+  .calculator-card {
+    padding: 20px;
+  }
+
+  .calculator-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .signup-btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+
+  .home-link-card {
+    padding: 30px 20px;
+    margin: 30px 0;
+  }
+
+  .home-link-title {
+    font-size: 2rem;
+  }
+
+  .home-link-text {
+    font-size: 1.1rem;
+  }
+
+  /* Navbar adjustments for mobile */
+  .graffiti-navbar {
+    font-size: 1.2rem;
+  }
+
+  .graffiti-navbar .navbar-brand {
+    font-size: 1.3rem;
+  }
+
+  .graffiti-navbar .nav-link {
+    font-size: 1.1rem;
+  }
+
+  .graffiti-navbar .navbar-toggler {
+    border: none;
+  }
+
+  .graffiti-navbar .navbar-toggler-icon {
+    filter: invert(1);
+  }
+
+  /* Make font sizes responsive */
+  .graffiti-text {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+  }
+
+  .graffiti-subtitle {
+    font-size: clamp(1.2rem, 4vw, 2rem);
+  }
+
+  .value-title {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+  }
+
+  .facility-features {
+    font-size: clamp(1.2rem, 4vw, 2rem);
+  }
+
+  .facility-features li:before {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+  }
+
+  .amenity-card h4 {
+    font-size: clamp(1rem, 3vw, 1.2rem);
+  }
+
+  .home-link-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+  }
+
+  .home-link-text {
+    font-size: clamp(1rem, 3vw, 1.3rem);
+  }
+}
+
+/* Additional media query for very small screens */
+@media (max-width: 576px) {
+  .welcome-3d {
+    font-size: clamp(20px, 10vw, 40px);
+    text-shadow: 
+      1px 1px 0 #3eb8ff,
+      2px 2px 0 #ff2f9c,
+      3px 3px 0 #a03eff,
+      4px 4px 0 #000000;
+  }
+
+  .graffiti-navbar {
+    padding: 5px 10px;
+    font-size: 1rem;
+  }
+
+  .graffiti-navbar .navbar-brand {
+    font-size: 1.1rem;
+  }
+
+  .graffiti-navbar .nav-link {
+    font-size: 1rem;
+    margin: 0 5px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .calculator-btn {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  .signup-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .home-link-card {
+    padding: 20px 15px;
+    margin: 20px 0;
+  }
+
+  .home-link-title {
+    font-size: clamp(1.2rem, 5vw, 2rem);
+  }
+
+  .home-link-text {
+    font-size: clamp(0.9rem, 4vw, 1.1rem);
+  }
+
+  .graffiti-text {
+    font-size: clamp(1.2rem, 6vw, 2.5rem);
+  }
+
+  .graffiti-subtitle {
+    font-size: clamp(1rem, 5vw, 1.8rem);
+  }
+
+  .value-title {
+    font-size: clamp(0.9rem, 4vw, 1.3rem);
+  }
+
+  .facility-features {
+    font-size: clamp(1rem, 5vw, 1.8rem);
+  }
+
+  .facility-features li:before {
+    font-size: clamp(0.8rem, 4vw, 1.3rem);
+  }
+
+  .amenity-card h4 {
+    font-size: clamp(0.9rem, 4vw, 1.1rem);
+  }
+
+  .amenity-card p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Fade-in animation for sections */
+.fade-in-section {
+    height: 800px; /* Further increased height for better visibility */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+  .col-md-4 img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    transition: all 0.5s ease;
+    animation: float-image 4s ease-in-out infinite;
+    box-shadow: 0 0px 30px rgb(255, 0, 132);
+  }
+  .col-md-4 img:hover {
+    width: 200%;
+    height: 900px;
+    box-shadow: 0 0 20px 5px rgba(255, 47, 156, 0.8), 0 0 30px 10px rgba(62, 184, 255, 0.7);
+  }

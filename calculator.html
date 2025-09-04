@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membership Calculator - DoBu Martial Arts</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg graffiti-navbar">
+        <div class="container-fluid">
+          <!-- Brand with logo on left -->
+          <a class="navbar-brand" href="home.html">
+            DoBu Martial Arts
+          </a>
+      
+          <!-- Mobile toggler -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="facilities.html">Facilities</a></li>
+              <li class="nav-item"><a class="nav-link" href="mentors.html">Mentors</a></li>
+              <li class="nav-item"><a class="nav-link active" href="calculator.html">Calculator</a></li>
+            </ul>
+      
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container-fluid text-center">
+        <!-- Logo Display -->
+        <div class="row logodisplay">
+          <img src="logo1.png" alt="DoBu Martial Arts Logo" class="img-fluid rounded shadow">
+        </div>
+
+        <!-- Calculator Header -->
+        <div class="row row1">
+          <div class="col">Membership Calculator</div>
+        </div>
+
+        <!-- Membership Calculator Form -->
+        <div class="row calculator-section">
+          <div class="col-md-6 mx-auto">
+            <div class="calculator-card">
+              <h3 class="graffiti-subtitle">Calculate Your Membership</h3>
+              
+              <form id="membershipForm">
+                <div class="mb-3">
+                  <label class="form-label graffiti-text">Membership Type:</label>
+                  <select class="form-control calculator-input" id="membershipType" required>
+                    <option value="">Select Membership</option>
+                    <option value="basic">Basic (1 martial art) - $80/month</option>
+                    <option value="premium">Premium (2 martial arts) - $120/month</option>
+                    <option value="elite">Elite (Unlimited) - $150/month</option>
+                    <option value="family">Family Package - $250/month</option>
+                  </select>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label graffiti-text">Contract Duration:</label>
+                  <select class="form-control calculator-input" id="contractDuration" required>
+                    <option value="">Select Duration</option>
+                    <option value="1">1 Month</option>
+                    <option value="3">3 Months (-5%)</option>
+                    <option value="6">6 Months (-10%)</option>
+                    <option value="12">12 Months (-15%)</option>
+                  </select>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label graffiti-text">Number of People:</label>
+                  <input type="number" class="form-control calculator-input" id="numberOfPeople" min="1" max="10" value="1" required>
+                </div>
+
+                <div class="mb-3">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="personalTraining">
+                    <label class="form-check-label graffiti-text" for="personalTraining">
+                      Add Personal Training (+$50/session)
+                    </label>
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label graffiti-text">Number of PT Sessions:</label>
+                  <input type="number" class="form-control calculator-input" id="ptSessions" min="0" max="20" value="0" disabled>
+                </div>
+
+                <button type="button" class="btn btn-primary calculator-btn" id="calculateBtn">Calculate Total</button>
+              </form>
+
+              <!-- Results Display -->
+              <div class="results-container mt-4 hidden" id="resultsContainer">
+                <h4 class="value-title">Membership Summary</h4>
+                <div class="result-item">
+                  <span class="result-label">Monthly Cost:</span>
+                  <span class="result-value" id="monthlyCost">$0.00</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">Total Duration:</span>
+                  <span class="result-value" id="totalDuration">0 months</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">Personal Training:</span>
+                  <span class="result-value" id="ptCost">$0.00</span>
+                </div>
+                <div class="result-item total">
+                  <span class="result-label">Total Cost:</span>
+                  <span class="result-value" id="totalCost">$0.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BMI Calculator Section -->
+        <div class="row calculator-section mt-5">
+          <div class="col-md-6 mx-auto">
+            <div class="calculator-card">
+              <h3 class="graffiti-subtitle">BMI Calculator</h3>
+              
+              <form id="bmiForm">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label class="form-label graffiti-text">Height (cm):</label>
+                      <input type="number" class="form-control calculator-input" id="height" min="100" max="250" required>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label class="form-label graffiti-text">Weight (kg):</label>
+                      <input type="number" class="form-control calculator-input" id="weight" min="30" max="200" required>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label graffiti-text">Competition Weight Class:</label>
+                  <select class="form-control calculator-input" id="weightClass">
+                    <option value="">Select Weight Class</option>
+                    <option value="flyweight">Flyweight (≤ 57 kg)</option>
+                    <option value="bantamweight">Bantamweight (57.1 - 63 kg)</option>
+                    <option value="featherweight">Featherweight (63.1 - 70 kg)</option>
+                    <option value="lightweight">Lightweight (70.1 - 77 kg)</option>
+                    <option value="welterweight">Welterweight (77.1 - 84 kg)</option>
+                    <option value="middleweight">Middleweight (84.1 - 93 kg)</option>
+                    <option value="lightheavy">Light Heavyweight (93.1 - 105 kg)</option>
+                    <option value="heavyweight">Heavyweight (105.1+ kg)</option>
+                  </select>
+                </div>
+
+                <button type="button" class="btn btn-primary calculator-btn" id="calculateBmiBtn">Calculate BMI</button>
+              </form>
+
+              <!-- BMI Results -->
+              <div class="results-container mt-4 hidden" id="bmiResultsContainer">
+                <h4 class="value-title">BMI Results</h4>
+                <div class="result-item">
+                  <span class="result-label">Your BMI:</span>
+                  <span class="result-value" id="bmiValue">0.00</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">Category:</span>
+                  <span class="result-value" id="bmiCategory">-</span>
+                </div>
+                <div class="result-item" id="weightClassResult">
+                  <span class="result-label">Weight Class:</span>
+                  <span class="result-value" id="suggestedWeightClass">-</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="script.js"></script>
+</body>
+</html>
